@@ -16,7 +16,7 @@ function createRepository(name) {
       });
     }),
 
-    write: () => new Promise(() => {
+    write: (data) => new Promise((resolve, reject) => {
       writeFile(path, JSON.stringify(data), (error) => {
         if (error) {
           reject(error);
