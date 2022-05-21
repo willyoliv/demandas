@@ -8,7 +8,7 @@ const cache = new InMemoryCache();
 const client = new ApolloClient({
   link,
   cache,
-  connectToDevTools: true
+  connectToDevTools: true,
 });
 
 export default client;
